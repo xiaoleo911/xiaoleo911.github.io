@@ -149,7 +149,7 @@ hexo deploy
 	
 	
     <footer class="article-footer">
-      <a data-url="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/" data-id="cj0ko2dxe00004kjx3h3nhdxb" class="article-share-link">Share</a>
+      <a data-url="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/" data-id="cj0kq6yed000070jxjxnmt0b9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -257,12 +257,16 @@ hexo deploy
 <!--page counter part-->
 <script>
 function addCount (Counter) {
-        var url= $('.article-date').attr('href').trim();		
-        var title = $('.article-title').text().trim();		
+
+
+		var url=$('.article-date').attr('href').trim();
+        var title = $('.article-title').text().trim();
+		//alert('url ' + url);
+		//alert('title ' + title);
         var query= new AV.Query(Counter);
 				
         //use url as unique idnetfication
-
+		
         query.equalTo("url", url);
 		
 		query.find().then(function (results) {
@@ -297,8 +301,19 @@ function addCount (Counter) {
 $(function(){
         var Counter=AV.Object.extend("Counter");
         //only increse visit counting when intering a page
-        if ($('.article-title').length == 1)
-        addCount(Counter);
+
+		var url = window.location.href;
+		var index = url.indexOf("o");
+		if(index == 12){
+			url = url.substring(29, url.length);
+		}else{
+			url = url.substring(21, url.length);
+		}
+		if(url != '/'){
+			addCount(Counter);
+		}
+		
+		
         var query=new AV.Query(Counter);
         query.descending("time");
         // the sum of popular posts
