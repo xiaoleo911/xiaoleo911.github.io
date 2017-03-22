@@ -217,7 +217,7 @@ function addCount (Counter) {
 				counter.save();
 				//alert("访客+1！");
 			}else{
-				alert("您是第一位访客！");
+				//alert("您是第一位访客！");
 				// 执行 CQL 语句实现新增一个 TodoFolder 对象
 				AV.Query.doCloudQuery('insert into Counter(time, url, title) values(1, "' + url + '", "' + title + '")').then(function (data) {
 				// data 中的 results 是本次查询返回的结果，AV.Object 实例列表
