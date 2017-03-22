@@ -184,7 +184,7 @@ hexo deploy
 	
 	
     <footer class="article-footer">
-      <a data-url="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/" data-id="cj0kqko340000yojx6e0pggin" class="article-share-link">Share</a>
+      <a data-url="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/" data-id="cj0kqmca700006sjx6dlml4jz" class="article-share-link">Share</a>
       
       
     </footer>
@@ -337,10 +337,10 @@ $(function(){
         //only increse visit counting when intering a page
 
 		var url = window.location.href;
-		var index = url.indexOf("o");
-
+		var index = url.indexOf("io");
+		alert(index);
 		if(index == 11){
-			url = url.substring(34, url.length);
+			url = url.substring(3, url.length);
 		}else{
 			url = url.substring(21, url.length);
 		}
