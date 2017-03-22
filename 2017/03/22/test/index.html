@@ -87,52 +87,16 @@
 
 
 
-<meta name="description" content="环境配置
-
-安装Node（必须）
-
-用来生成静态页面
-到Node.js官网下载对应平台的最新版本即可
-
-安装Git（必须）
-
-将hexo提交到github上
-搭建过程
-申请github账号，新建repository，例如github账号为xiaoleo911，repository名就为xiaoleo911.github.io新建博客目录如tinkfu，然后进入目录安装hexo 
-sudo npm">
+<meta name="description" content="start from zero">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo + github 搭建个人博客">
-<meta property="og:url" content="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/index.html">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://tinkerfu.com/2017/03/22/test/index.html">
 <meta property="og:site_name" content="TinkerFu">
-<meta property="og:description" content="环境配置
-
-安装Node（必须）
-
-用来生成静态页面
-到Node.js官网下载对应平台的最新版本即可
-
-安装Git（必须）
-
-将hexo提交到github上
-搭建过程
-申请github账号，新建repository，例如github账号为xiaoleo911，repository名就为xiaoleo911.github.io新建博客目录如tinkfu，然后进入目录安装hexo 
-sudo npm">
-<meta property="og:updated_time" content="2017-03-22T07:41:54.500Z">
+<meta property="og:description" content="start from zero">
+<meta property="og:updated_time" content="2017-03-22T10:00:32.039Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo + github 搭建个人博客">
-<meta name="twitter:description" content="环境配置
-
-安装Node（必须）
-
-用来生成静态页面
-到Node.js官网下载对应平台的最新版本即可
-
-安装Git（必须）
-
-将hexo提交到github上
-搭建过程
-申请github账号，新建repository，例如github账号为xiaoleo911，repository名就为xiaoleo911.github.io新建博客目录如tinkfu，然后进入目录安装hexo 
-sudo npm">
+<meta name="twitter:title" content="test">
+<meta name="twitter:description" content="start from zero">
 
 
 
@@ -160,13 +124,13 @@ sudo npm">
 
 
 
-  <link rel="canonical" href="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/"/>
+  <link rel="canonical" href="http://tinkerfu.com/2017/03/22/test/"/>
 
 
 
 
 
-  <title> hexo + github 搭建个人博客 | TinkerFu </title>
+  <title> test | TinkerFu </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -285,7 +249,7 @@ sudo npm">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://tinkerfu.com/2017/03/20/hexo + github 搭建个人博客/">
+    <link itemprop="mainEntityOfPage" href="http://tinkerfu.com/2017/03/22/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="TinkerFu">
@@ -306,7 +270,7 @@ sudo npm">
             
             
               
-                hexo + github 搭建个人博客
+                test
               
             
           </h1>
@@ -321,8 +285,8 @@ sudo npm">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-20T17:50:38+08:00">
-                2017-03-20
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-22T18:00:32+08:00">
+                2017-03-22
               </time>
             
 
@@ -339,7 +303,7 @@ sudo npm">
 
           
           
-             <span id="/2017/03/20/hexo + github 搭建个人博客/" class="leancloud_visitors" data-flag-title="hexo + github 搭建个人博客">
+             <span id="/2017/03/22/test/" class="leancloud_visitors" data-flag-title="test">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -368,36 +332,7 @@ sudo npm">
       
 
       
-        <p><strong>环境配置</strong></p>
-<ul>
-<li>安装Node（必须）</li>
-</ul>
-<p>用来生成静态页面</p>
-<p>到Node.js官网下载对应平台的最新版本即可</p>
-<ul>
-<li>安装Git（必须）</li>
-</ul>
-<p>将hexo提交到github上</p>
-<p><strong>搭建过程</strong></p>
-<p>申请github账号，新建repository，例如github账号为xiaoleo911，repository名就为xiaoleo911.github.io<br>新建博客目录如tinkfu，然后进入目录安装hexo </p>
-<pre><code>sudo npm install -g hexo
-</code></pre><p>初始化</p>
-<pre><code>hexo init
-</code></pre><p>配置<br>在新建的blog目录下打开_config.yml文件，在最下面修改成这个样子</p>
-<pre><code>deploy:
-  type: git
-  repo: git@github.com:xiaoleo911/xiaoleo911.github.io.git
-  branch: master
-</code></pre><p>执行以下代码</p>
-<pre><code>npm install hexo-deployer-git --save
-hexo generate
-hexo deploy
-</code></pre><p>这样页面就上传到github上了，可以通过访问xiaoleo.github.io来访问博客了，这里的xiaoleo911是我的github账号，换成自己的即可，据说上传页面之后有5分钟的延迟，才可以开发。</p>
-<p>还可以输入</p>
-<pre><code>hexo server -p 4000
-</code></pre><p>在本地浏览器输入localhost：4000来访问blog，如果端口被占用可以将4000换成其他的端口，我的端口就被一个看pdf的软件占用了。。。</p>
-<p><a href="http://7xo6sh.com1.z0.glb.clouddn.com/reward.jpg" target="_blank" rel="external">打赏我</a></p>
-
+        
       
     </div>
 
@@ -433,15 +368,15 @@ hexo deploy
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/03/20/hexo + github 搭建个人博客/" rel="next" title="hexo + github 搭建个人博客">
+                <i class="fa fa-chevron-left"></i> hexo + github 搭建个人博客
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/22/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
